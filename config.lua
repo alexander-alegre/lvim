@@ -5,17 +5,17 @@
 -- Discord: https://discord.com/invite/Xb9B4Ny
 
 -- configs
--- require("lua.config.conform")
+require("config.conform")
 
 -- custom mappings
-require("lua.mappings")
+require("mappings")
 
 -- plugins
-local copilot_plugin = require("lua.plugins.copilot")
-local harpoon_plugin = require("lua.plugins.harpoon")
-local avante_plugin = require("lua.plugins.avante")
-local git_plugin = require("lua.plugins.git")
-local go_plugin = require("lua.plugins.go")
+local copilot_plugin = require("plugins.copilot")
+local harpoon_plugin = require("plugins.harpoon")
+local avante_plugin = require("plugins.avante")
+local git_plugin = require("plugins.git")
+local go_plugin = require("plugins.go")
 
 lvim.plugins = {}
 vim.list_extend(lvim.plugins, copilot_plugin)
