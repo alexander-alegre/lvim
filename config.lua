@@ -5,7 +5,7 @@
 -- Discord: https://discord.com/invite/Xb9B4Ny
 
 -- configs
-require("config.conform")
+lvim.format_on_save = true
 
 -- custom mappings
 require("mappings")
