@@ -6,17 +6,12 @@ local linters = require "lvim.lsp.null-ls.linters"
 -- Formatters
 local formatters = require "lvim.lsp.null-ls.formatters"
 
--- Check for .eslintrc.json file at the root of the project
-local eslint_config_exists = vim.fn.filereadable(".eslintrc.json") == 1
-
-if eslint_config_exists then
-  linters.setup {
-    {
-      command = "eslint_d",
-      filetypes = { "javascript", "javascriptreact", "typescript", "typescriptreact" },
-    },
-  }
-end
+linters.setup {
+  {
+    command = "eslint_d",
+    filetypes = { "javascript", "javascriptreact", "typescript", "typescriptreact" },
+  },
+}
 
 -- Setup Prettier as a formatter (js/ts)
 formatters.setup {
