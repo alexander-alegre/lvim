@@ -2,13 +2,20 @@
 lvim.format_on_save = true
 
 -- Setup ESLint as a linter
+-- Setup ESLint as a linter
 local linters = require "lvim.lsp.null-ls.linters"
-linters.setup {
-  {
-    command = "eslint_d",
-    filetypes = { "javascript", "javascriptreact", "typescript", "typescriptreact" },
-  },
-}
+
+-- Check for .eslintrc.json file at the root of the project
+local eslint_config_exists = vim.fn.filereadable(".eslintrc.json") == 1
+
+if eslint_config_exists then
+  linters.setup {
+    {
+      command = "eslint_d",
+      filetypes = { "javascript", "javascriptreact", "typescript", "typescriptreact" },
+    },
+  }
+end
 
 -- Formatters
 local formatters = require "lvim.lsp.null-ls.formatters"
