@@ -16,6 +16,7 @@ local harpoon_plugin = require("plugins.harpoon")
 local avante_plugin = require("plugins.avante")
 local git_plugin = require("plugins.git")
 local go_plugin = require("plugins.go")
+local visual_multi_plugin = require("plugins.visual_multi")
 
 lvim.plugins = {}
 vim.list_extend(lvim.plugins, copilot_plugin)
@@ -23,3 +24,4 @@ vim.list_extend(lvim.plugins, harpoon_plugin)
 vim.list_extend(lvim.plugins, avante_plugin)
 vim.list_extend(lvim.plugins, git_plugin)
 vim.list_extend(lvim.plugins, go_plugin)
+vim.list_extend(lvim.plugins, visual_multi_plugin)
