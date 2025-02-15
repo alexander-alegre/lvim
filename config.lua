@@ -4,7 +4,10 @@
 -- Forum: https://www.reddit.com/r/lunarvim/
 -- Discord: https://discord.com/invite/Xb9B4Ny
 
--- configs
+-- enable spell check globally for English
+vim.opt.spell = true
+
+-- configuration
 require("config.formatters")
 
 -- custom mappings
@@ -17,6 +20,7 @@ local avante_plugin = require("plugins.avante")
 local git_plugin = require("plugins.git")
 local go_plugin = require("plugins.go")
 local visual_multi_plugin = require("plugins.visual_multi")
+local csvview = require("plugins.csvview")
 
 lvim.plugins = {}
 vim.list_extend(lvim.plugins, copilot_plugin)
@@ -25,3 +29,4 @@ vim.list_extend(lvim.plugins, avante_plugin)
 vim.list_extend(lvim.plugins, git_plugin)
 vim.list_extend(lvim.plugins, go_plugin)
 vim.list_extend(lvim.plugins, visual_multi_plugin)
+vim.list_extend(lvim.plugins, csvview)
