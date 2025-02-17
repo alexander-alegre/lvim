@@ -33,3 +33,9 @@ formatters.setup {
     args = { "--quiet", "-" },
   },
 }
+
+-- golang
+formatters.setup {
+  { command = "goimports", filetypes = { "go" } },
+  { command = "gofumpt",   filetypes = { "go" } },
+}
