@@ -23,10 +23,10 @@ return {
     "CopilotC-Nvim/CopilotChat.nvim",
     event = "VeryLazy",
     dependencies = {
-      { "github/copilot.vim" }, -- Alternatively: { "zbirenbaum/copilot.lua" }
+      { "github/copilot.vim" },    -- Alternatively: { "zbirenbaum/copilot.lua" }
       { "nvim-lua/plenary.nvim" }, -- Removed unnecessary branch specification
     },
-    build = "make tiktoken", -- Only on MacOS or Linux
+    build = "make tiktoken",       -- Only on MacOS or Linux
     opts = {
       -- Add any CopilotChat-specific configuration here
     },

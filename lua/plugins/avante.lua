@@ -29,9 +29,9 @@ return {
       "nvim-lua/plenary.nvim",
       "MunifTanjim/nui.nvim",
       --- The below dependencies are optional,
-      "hrsh7th/nvim-cmp", -- Autocompletion for Avante commands and mentions
+      "hrsh7th/nvim-cmp",            -- Autocompletion for Avante commands and mentions
       "nvim-tree/nvim-web-devicons", -- or echasnovski/mini.icons
-      "zbirenbaum/copilot.lua", -- For Copilot integration
+      "zbirenbaum/copilot.lua",      -- For Copilot integration
       {
         -- Support for image pasting
         "HakonHarnes/img-clip.nvim",
@@ -60,4 +60,3 @@ return {
     },
   },
 }
-

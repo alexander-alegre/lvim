@@ -1,11 +1,11 @@
 return {
-  {
-    "abeldekat/harpoonline",
-    lazy = true,
-    config = function()
-      -- the setup
-    end,
-  },
+  -- {
+  --   "abeldekat/harpoonline",
+  --   lazy = true,
+  --   config = function()
+  --     -- the setup
+  --   end,
+  -- },
   {
     "ThePrimeagen/harpoon",
     branch = "harpoon2",
